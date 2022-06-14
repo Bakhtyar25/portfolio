@@ -1,0 +1,10 @@
+.navbar{
+    position:fixed;
+    width: 100%;
+    height: auto;
+    top: 0px;
+    transition: transform 150ms ease 0s;
+    transform: translateY(0px) translateX(0px);
+    z-index: 10;
+}
+
