@@ -10,32 +10,213 @@
     <link rel="stylesheet" href="css/tailwind.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Document</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Document</title>
 </head>
+<style>
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 16px/1.5 "Titillium Web", sans-serif;
+  background: linear-gradient(54deg, #9164ff, #8bfff4);
+  color: #3c3f64;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+.timeline ul li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) rotate(45deg);
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  background: #eee;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.timeline ul li div time {
+  position: absolute;
+  background: #f5af19;
+  width: 80px;
+  height: 30px;
+  top: -15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+.timeline ul li div div {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timeline ul li div div p {
+  text-align: center;
+}
+.timeline ul li div .discovery {
+  margin-right: 10px;
+}
+.timeline ul li:nth-of-type(odd) > div {
+  left: 45px;
+}
+.timeline ul li:nth-of-type(even) > div {
+  left: -439px;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.timeline ul li:nth-of-type(odd) div {
+  transform: translate3d(100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li:nth-of-type(even) div {
+  transform: translate3d(-100px, -10px, 0) rotate(10deg);
+}
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+    flex-direction: column;
+  }
+  .timeline ul li div div {
+    width: 80%;
+    margin: 10px;
+  }
+  .timeline ul li:nth-of-type(even) > div {
+    left: -289px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    background: #8bfff4;
+  }
+
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-of-type(even) > div {
+    left: 45px;
+  }
+}
+
+
+</style>
 
 <body class="bg-info">
-    
-    <div class="container-fluid bg-dark p-3 ">
-        <div class="row justify-content-center m-3">
-            <div class="col-sm-4 sm:mx-12 col-md-6 col-xl-2 col-lg-2 m-3 p-3 w-20 bg-orange-500 ">
-                <div  class="pic"><a href="" target="_blank"><img  src="../images/bootstrap.png" class="w-100 h-100 "></a></div>
-            </div>
 
-            <div class="col-sm-4 sm:mx-12 col-md-6 col-xl-2 col-lg-2 m-3 p-3 w-20 bg-orange-500 ">
-                <div  class="pic"><a href="" target="_blank"><img  src="../images/bootstrap.png" class="w-100 h-100 "></a></div>
-            </div>
-            <div class="col-sm-4 sm:mx-12 col-md-6 col-xl-2 col-lg-2 m-3 p-3 w-20 bg-orange-500 ">
-                <div  class="pic"><a href="" target="_blank"><img  src="../images/bootstrap.png" class="w-100 h-100 "></a></div>
-            </div>
-            <div class="col-sm-4 sm:mx-12 col-md-6 col-xl-2 col-lg-2 m-3 p-3 w-20 bg-orange-500 ">
-                <div  class="pic"><a href="" target="_blank"><img  src="../images/bootstrap.png" class="w-100 h-100 "></a></div>
-            </div>
+    <section class="timeline">
+        <ul>
+            <li>
+                <div>
+                  <time>1942</time>
+                  <div class="discovery">
+                    <h1>Discovery</h1>
+                    <p>
+                      Nuclear Reactor
+                    </p>
+                  </div>
+                  <div class="scientist">
+                    <h1>Scientist</h1>
+                    <span>Anrico Fermi</span>
+                  </div>
+                </div>
+              </li>
 
-            
+              <li>
+                <div>
+                  <time>1942</time>
+                  <div class="discovery">
+                    <h1>Discovery</h1>
+                    <p>
+                      Nuclear Reactor
+                    </p>
+                  </div>
+                  <div class="scientist">
+                    <h1>Scientist</h1>
+                    <span>Anrico Fermi</span>
+                  </div>
+                </div>
+              </li>
+        </ul>
+      </section>
+      
 
-
-        </div>
-    </div>
-    
 </body>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+<script>
+
+var items = document.querySelectorAll(".timeline li");
+
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function callbackFunc() {
+  for (var i = 0; i < items.length; i++) {
+    if (isElementInViewport(items[i])) {
+      if(!items[i].classList.contains("in-view")){
+        items[i].classList.add("in-view");
+      }
+    } else if(items[i].classList.contains("in-view")) {
+        items[i].classList.remove("in-view");
+    }
+  }
+}
+ 
+window.addEventListener("load", callbackFunc);
+window.addEventListener("scroll", callbackFunc);
+
+
+</script>
