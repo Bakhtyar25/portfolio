@@ -29,3 +29,23 @@ function darkMode(){
     }
 }
 btn.addEventListener('click',darkMode);
+
+
+
+
+
+
+const image=document.querySelector('.im');
+const paragraph=document.querySelector('.para')
+const paragraph1=document.querySelector('.link')
+
+image.addEventListener('mouseover',function(){
+    paragraph1.textContent = "More About Me";
+    paragraph.style.setProperty('background-color', 'rgba(12, 12, 12, 0.244)', 'important');
+})
+
+image.addEventListener('mouseout',function(){
+  paragraph1.textContent = "";
+  paragraph.style.setProperty('background-color', 'rgba(240, 248, 255, 0)', 'important');
+
+})
