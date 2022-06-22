@@ -105,77 +105,80 @@ function backToTop() {
 
 
 
-const lang = document.querySelectorAll('.lang')
+// const lang = document.querySelectorAll('.lang')
 
 
-for (let i = 0; i < lang.length; i++) {
-  var g=lang[i]
-  g.addEventListener('mouseover', langhover);
+// for (let i = 0; i < lang.length; i++) {
+//   lang[i].addEventListener('mouseover', langhover);
+// }
+// for (let i = 0; i < lang.length; i++) {
+//   lang[i].addEventListener('mouseout', langout);
 
-}
-for (let i = 0; i < lang.length; i++) {
-  var g=lang[i]
-  g.addEventListener('mouseout', langout);
-
-}
+// }
 
 
 
 
-const exp = document.querySelectorAll(` .exp`)
+// const exp = document.querySelectorAll(` .exp`)
 
-function langhover() {
+// function langhover() {
 
-  for (var i = 0; i < exp.length; i++) {
-    var f = 40
-    if (i == 0) {
-      f = 85
-    }
-    if (i == 1) {
-      f=70
-    }
-    if (i == 2) {
-      f=0
-    }
-    if (i == 3) {
-      f=90
-    }
-    if (i == 4) {
-      f=85
-    }
-    if (i == 5) {
-      f=40
-    }
-    if (i == 6) {
-      f=50
-    }
-    if (i == 7) {
-      f=50
-    }
-    if (i == 8) {
-      f=60
-    }
-    if (i == 9) {
-      f=75
-    }
-    if (i == 10) {
-      f=80
-    }
-    if (i == 11) {
-      f=70
-    }
-    exp[i].innerHTML = `<div class="rounded-full text-black w-100">
-    <div class="progress w-100 mx-auto mt-2">
-      <div class="progress-bar-striped bg-warning progress-bar-animated text-center " role="progressbar"
-        aria-valuenow="${f}" aria-valuemin="0" aria-valuemax="100" style="width: ${f}%">${f}</div>
-    </div>
-  </div>`
-  }
+//   for (var i = 0; i < exp.length; i++) {
+//     var f = 40
+//     if (i == 0) {
+//       f = 85
+//     }
+//     else if (i == 1) {
+//       f=70
+//     }
+//     else if (i == 2) {
+//       f=0
+//     }
+//     else if (i == 3) {
+//       f=90
+//     }
+//     else if (i == 4) {
+//       f=85
+//     }
+//     else if (i == 5) {
+//       f=40
+//     }
+//     else if (i == 6) {
+//       f=50
+//     }
+//     else if (i == 7) {
+//       f=50
+//     }
+//     else if (i == 8) {
+//       f=60
+//     }
+//     else if (i == 9) {
+//       f=75
+//     }
+//     else if (i == 10) {
+//       f=80
+//     }
+//     else if (i == 11) {
+//       f=70
+//     }
+//     exp[i].innerHTML = `<div class="rounded-full text-black w-100 d-block">
+//     <div class="progress w-100 mx-auto mt-2">
+//     <div class="progress-bar-striped bg-warning progress-bar-animated text-center " role="progressbar"
+//     aria-valuenow="${f}" aria-valuemin="0" aria-valuemax="100" style="width: ${f}%">${f}</div>
+//     </div>
+//     </div>`
+    
+//   }
 
-}
+// }
 
-function langout() {
-  for (let i = 0; i < exp.length; i++) {
-    exp[i].innerHTML = ``
-  }
-}
+// function langout() {
+//   for (let i = 0; i < exp.length; i++) {
+//     exp[i].innerHTML = ``
+//   }
+// }
+
+
+
+
+
