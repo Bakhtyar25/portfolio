@@ -1,9 +1,13 @@
+// selecting darkmode icon-button
 const btn = document.querySelector('.darkmode');
-const darkakan = document.querySelectorAll('.bg-dark')
-const textalightakan = document.querySelectorAll('.text-light')
-const textdarkakan = document.querySelectorAll('.text-dark')
-const ronakakan = document.querySelectorAll('.bg-light')
-const icon = document.querySelector('.darkicon')
+
+// select dark backgraunds
+const darkakan = document.querySelectorAll('.bg-dark');
+
+const textalightakan = document.querySelectorAll('.text-light');
+const textdarkakan = document.querySelectorAll('.text-dark');
+const ronakakan = document.querySelectorAll('.bg-light');
+const icon = document.querySelector('.darkmode #darkicon');
 
 let a = 0
 function darkMode() {
@@ -25,12 +29,12 @@ function darkMode() {
       darkakan[i].style.transition = 'all 0.4s linear';
     }
 
-    for (let i = 0; i < darkakan.length; i++) {
+    for (let i = 0; i < ronakakan.length; i++) {
       ronakakan[i].style.setProperty('background-color', '#212529', 'important');
       ronakakan[i].style.transition = 'all 0.4s linear';
     }
 
-    icon.setAttribute('src', '../images/dark.png');
+    icon.setAttribute('src', 'images/dark.png');
 
   } else if (a % 2 == 0) {
 
@@ -49,12 +53,12 @@ function darkMode() {
       darkakan[i].style.transition = 'all 0.4s linear';
     }
 
-    for (let i = 0; i < darkakan.length; i++) {
+    for (let i = 0; i < ronakakan.length; i++) {
       ronakakan[i].style.setProperty('background-color', '#f8f9fa', 'important');
       ronakakan[i].style.transition = 'all 0.4s linear';
     }
 
-    icon.setAttribute('src', '../images/light.png');
+    icon.setAttribute('src', 'images/light.png');
   }
 }
 btn.addEventListener('click', darkMode);
@@ -116,8 +120,6 @@ function backToTop() {
 
 
 
-
-
 const lang = document.querySelectorAll('.lang');
 
 
@@ -125,11 +127,11 @@ lang.forEach(function (exp) {
   const progres = exp.querySelector('.exp');
   const tools = exp.querySelector('.tools');
 
-  tools.addEventListener('mouseover',()=>{
+  tools.addEventListener('mouseover', () => {
     progres.style.setProperty('display', 'block', 'important');
   })
 
-  tools.addEventListener('mouseout',()=>{
+  tools.addEventListener('mouseout', () => {
     progres.style.setProperty('display', 'none', 'important');
   })
 
