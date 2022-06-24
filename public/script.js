@@ -9,21 +9,25 @@ let a = 0
 function darkMode() {
   ++a;
   if (a % 2 != 0) {
-
-
+    
     for (let i = 0; i < textalightakan.length; i++) {
       textalightakan[i].style.setProperty('color', '#212529', 'important');
+      textalightakan[i].style.transition='all 0.4s linear';
+
     }
     for (let i = 0; i < textdarkakan.length; i++) {
       textdarkakan[i].style.setProperty('color', '#f8f9fa', 'important');
+      textdarkakan[i].style.transition='all 0.4s linear';
     }
 
     for (let i = 0; i < darkakan.length; i++) {
       darkakan[i].style.setProperty('background-color', '#f8f9fa', 'important');
+      darkakan[i].style.transition='all 0.4s linear';
     }
 
     for (let i = 0; i < darkakan.length; i++) {
       ronakakan[i].style.setProperty('background-color', '#212529', 'important');
+      ronakakan[i].style.transition='all 0.4s linear';
     }
 
     icon.setAttribute('src', '../images/dark.png');
@@ -32,18 +36,22 @@ function darkMode() {
 
     for (let i = 0; i < textalightakan.length; i++) {
       textalightakan[i].style.setProperty('color', '#f8f9fa', 'important');
+      textalightakan[i].style.transition='all 0.4s linear';
     }
 
     for (let i = 0; i < textdarkakan.length; i++) {
       textdarkakan[i].style.setProperty('color', '#212529', 'important');
+      textdarkakan[i].style.transition='all 0.4s linear';
     }
 
     for (let i = 0; i < darkakan.length; i++) {
       darkakan[i].style.setProperty('background-color', '#212529', 'important');
+      darkakan[i].style.transition='all 0.4s linear';
     }
 
     for (let i = 0; i < darkakan.length; i++) {
       ronakakan[i].style.setProperty('background-color', '#f8f9fa', 'important');
+      ronakakan[i].style.transition='all 0.4s linear';
     }
 
     icon.setAttribute('src', '../images/light.png');
