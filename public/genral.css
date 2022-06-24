@@ -120,10 +120,3 @@ z-index: 22;
     display: none;
   }
 
-.xp{
-    display: none;
-}
-
-.lang:hover >.exp > .xp{
-    display: block;
-}

@@ -9,25 +9,25 @@ let a = 0
 function darkMode() {
   ++a;
   if (a % 2 != 0) {
-    
+
     for (let i = 0; i < textalightakan.length; i++) {
       textalightakan[i].style.setProperty('color', '#212529', 'important');
-      textalightakan[i].style.transition='all 0.4s linear';
+      textalightakan[i].style.transition = 'all 0.4s linear';
 
     }
     for (let i = 0; i < textdarkakan.length; i++) {
       textdarkakan[i].style.setProperty('color', '#f8f9fa', 'important');
-      textdarkakan[i].style.transition='all 0.4s linear';
+      textdarkakan[i].style.transition = 'all 0.4s linear';
     }
 
     for (let i = 0; i < darkakan.length; i++) {
       darkakan[i].style.setProperty('background-color', '#f8f9fa', 'important');
-      darkakan[i].style.transition='all 0.4s linear';
+      darkakan[i].style.transition = 'all 0.4s linear';
     }
 
     for (let i = 0; i < darkakan.length; i++) {
       ronakakan[i].style.setProperty('background-color', '#212529', 'important');
-      ronakakan[i].style.transition='all 0.4s linear';
+      ronakakan[i].style.transition = 'all 0.4s linear';
     }
 
     icon.setAttribute('src', '../images/dark.png');
@@ -36,22 +36,22 @@ function darkMode() {
 
     for (let i = 0; i < textalightakan.length; i++) {
       textalightakan[i].style.setProperty('color', '#f8f9fa', 'important');
-      textalightakan[i].style.transition='all 0.4s linear';
+      textalightakan[i].style.transition = 'all 0.4s linear';
     }
 
     for (let i = 0; i < textdarkakan.length; i++) {
       textdarkakan[i].style.setProperty('color', '#212529', 'important');
-      textdarkakan[i].style.transition='all 0.4s linear';
+      textdarkakan[i].style.transition = 'all 0.4s linear';
     }
 
     for (let i = 0; i < darkakan.length; i++) {
       darkakan[i].style.setProperty('background-color', '#212529', 'important');
-      darkakan[i].style.transition='all 0.4s linear';
+      darkakan[i].style.transition = 'all 0.4s linear';
     }
 
     for (let i = 0; i < darkakan.length; i++) {
       ronakakan[i].style.setProperty('background-color', '#f8f9fa', 'important');
-      ronakakan[i].style.transition='all 0.4s linear';
+      ronakakan[i].style.transition = 'all 0.4s linear';
     }
 
     icon.setAttribute('src', '../images/light.png');
@@ -113,78 +113,28 @@ function backToTop() {
 
 
 
-// const lang = document.querySelectorAll('.lang')
-
-
-// for (let i = 0; i < lang.length; i++) {
-//   lang[i].addEventListener('mouseover', langhover);
-// }
-// for (let i = 0; i < lang.length; i++) {
-//   lang[i].addEventListener('mouseout', langout);
-
-// }
 
 
 
 
-// const exp = document.querySelectorAll(` .exp`)
 
-// function langhover() {
+const lang = document.querySelectorAll('.lang');
 
-//   for (var i = 0; i < exp.length; i++) {
-//     var f = 40
-//     if (i == 0) {
-//       f = 85
-//     }
-//     else if (i == 1) {
-//       f=70
-//     }
-//     else if (i == 2) {
-//       f=0
-//     }
-//     else if (i == 3) {
-//       f=90
-//     }
-//     else if (i == 4) {
-//       f=85
-//     }
-//     else if (i == 5) {
-//       f=40
-//     }
-//     else if (i == 6) {
-//       f=50
-//     }
-//     else if (i == 7) {
-//       f=50
-//     }
-//     else if (i == 8) {
-//       f=60
-//     }
-//     else if (i == 9) {
-//       f=75
-//     }
-//     else if (i == 10) {
-//       f=80
-//     }
-//     else if (i == 11) {
-//       f=70
-//     }
-//     exp[i].innerHTML = `<div class="rounded-full text-black w-100 d-block">
-//     <div class="progress w-100 mx-auto mt-2">
-//     <div class="progress-bar-striped bg-warning progress-bar-animated text-center " role="progressbar"
-//     aria-valuenow="${f}" aria-valuemin="0" aria-valuemax="100" style="width: ${f}%">${f}</div>
-//     </div>
-//     </div>`
-    
-//   }
 
-// }
+lang.forEach(function (exp) {
+  const progres = exp.querySelector('.exp');
+  const tools = exp.querySelector('.tools');
 
-// function langout() {
-//   for (let i = 0; i < exp.length; i++) {
-//     exp[i].innerHTML = ``
-//   }
-// }
+  tools.addEventListener('mouseover',()=>{
+    progres.style.setProperty('display', 'block', 'important');
+  })
+
+  tools.addEventListener('mouseout',()=>{
+    progres.style.setProperty('display', 'none', 'important');
+  })
+
+})
+
 
 
 
