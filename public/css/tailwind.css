@@ -643,6 +643,28 @@ video {
   height: 80%;
 }
 
+.h-80 {
+  height: 20rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-min {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .max-h-screen {
   max-height: 100vh;
 }
@@ -663,6 +685,14 @@ video {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .resize {
