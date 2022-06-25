@@ -132,22 +132,22 @@ function backToTop() {
 
 // this code will make the experience of the language appear and disappear
 
-const lang = document.querySelectorAll('.lang');
+// const lang = document.querySelectorAll('.lang');
 
 
-lang.forEach(function (exp) {
-  const progres = exp.querySelector('.exp');
-  const tools = exp.querySelector('.tools');
+// lang.forEach(function (exp) {
+//   const progres = exp.querySelector('.exp');
+//   const tools = exp.querySelector('.tools');
 
-  tools.addEventListener('mouseover', () => {
-    progres.style.setProperty('display', 'block', 'important');
-  })
+//   tools.addEventListener('mouseover', () => {
+//     progres.style.setProperty('display', 'block', 'important');
+//   })
 
-  tools.addEventListener('mouseout', () => {
-    progres.style.setProperty('display', 'none', 'important');
-  })
+//   tools.addEventListener('mouseout', () => {
+//     progres.style.setProperty('display', 'none', 'important');
+//   })
 
-})
+// })
 
 
 
