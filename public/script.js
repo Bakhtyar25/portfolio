@@ -76,7 +76,8 @@ btn.addEventListener('click', darkMode);
 
 
 
-// this code will give a 
+// this code will give a first photo of mine a hover 
+// with a link init that will guide to about me section
 
 const image = document.querySelector('.im');
 const paragraph = document.querySelector('.para')
@@ -96,7 +97,8 @@ image.addEventListener('mouseout', function () {
 
 
 
-
+// this pice of code is when you click a button 
+// in the bottom-right page will go to the top of the main page 
 
 let mybutton = document.getElementById("btn-back-to-top");
 
@@ -128,7 +130,7 @@ function backToTop() {
 
 
 
-
+// this code will make the experience of the language appear and disappear
 
 const lang = document.querySelectorAll('.lang');
 
