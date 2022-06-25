@@ -16,22 +16,22 @@ function darkMode() {
 
     for (let i = 0; i < textalightakan.length; i++) {
       textalightakan[i].style.setProperty('color', '#212529', 'important');
-      textalightakan[i].style.transition = 'all 0.4s linear';
+      textalightakan[i].style.transition = 'all 0.3s linear';
 
     }
     for (let i = 0; i < textdarkakan.length; i++) {
       textdarkakan[i].style.setProperty('color', '#f8f9fa', 'important');
-      textdarkakan[i].style.transition = 'all 0.4s linear';
+      textdarkakan[i].style.transition = 'all 0.3s linear';
     }
 
     for (let i = 0; i < darkakan.length; i++) {
       darkakan[i].style.setProperty('background-color', '#f8f9fa', 'important');
-      darkakan[i].style.transition = 'all 0.4s linear';
+      darkakan[i].style.transition = 'background-color 0.3s linear';
     }
 
     for (let i = 0; i < ronakakan.length; i++) {
       ronakakan[i].style.setProperty('background-color', '#212529', 'important');
-      ronakakan[i].style.transition = 'all 0.4s linear';
+      ronakakan[i].style.transition = 'background-color 0.3s linear';
     }
 
     icon.setAttribute('src', 'images/dark.png');
@@ -40,22 +40,22 @@ function darkMode() {
 
     for (let i = 0; i < textalightakan.length; i++) {
       textalightakan[i].style.setProperty('color', '#f8f9fa', 'important');
-      textalightakan[i].style.transition = 'all 0.4s linear';
+      textalightakan[i].style.transition = 'all 0.3s linear';
     }
 
     for (let i = 0; i < textdarkakan.length; i++) {
       textdarkakan[i].style.setProperty('color', '#212529', 'important');
-      textdarkakan[i].style.transition = 'all 0.4s linear';
+      textdarkakan[i].style.transition = 'all 0.3s linear';
     }
 
     for (let i = 0; i < darkakan.length; i++) {
       darkakan[i].style.setProperty('background-color', '#212529', 'important');
-      darkakan[i].style.transition = 'all 0.4s linear';
+      darkakan[i].style.transition = 'background-color 0.3s linear';
     }
 
     for (let i = 0; i < ronakakan.length; i++) {
       ronakakan[i].style.setProperty('background-color', '#f8f9fa', 'important');
-      ronakakan[i].style.transition = 'all 0.4s linear';
+      ronakakan[i].style.transition = 'background-color 0.3s linear';
     }
 
     icon.setAttribute('src', 'images/light.png');

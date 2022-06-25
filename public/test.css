@@ -247,3 +247,10 @@ Questions
 .show-text .plus-icon {
   display: none;
 }
+
+
+
+body{
+  background-color: #c59d5f;
+  transition:ease-in;
+}
