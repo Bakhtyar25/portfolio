@@ -643,6 +643,10 @@ video {
   height: 80%;
 }
 
+.max-h-screen {
+  max-height: 100vh;
+}
+
 .w-32 {
   width: 8rem;
 }
