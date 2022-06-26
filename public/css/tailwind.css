@@ -931,24 +931,8 @@ video {
   color: rgb(253 224 71 / var(--tw-text-opacity));
 }
 
-.hover\:outline-1:hover {
-  outline-width: 1px;
-}
-
 .hover\:outline-2:hover {
   outline-width: 2px;
-}
-
-.hover\:outline-pink-500:hover {
-  outline-color: #ec4899;
-}
-
-.hover\:outline-cyan-500:hover {
-  outline-color: #06b6d4;
-}
-
-.hover\:outline-cyan-50:hover {
-  outline-color: #ecfeff;
 }
 
 .hover\:outline-yellow-500:hover {
