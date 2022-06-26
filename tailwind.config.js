@@ -4,7 +4,11 @@ module.exports = {
     "./public/*.html"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        darkesh:'#141f38'
+      }
+    },
   },
   plugins: [],
 }

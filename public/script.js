@@ -2,13 +2,13 @@
 const btn = document.querySelector('.darkmode');
 
 // select dark-backgraunds
-const darkBgs = document.querySelectorAll('.bg-slate-900');
+const darkBgs = document.querySelectorAll('.bg-darkesh');
 
 // select light-texts
 const lightTexts = document.querySelectorAll('.text-light');
 
 // select dark-texts
-const darkTexts = document.querySelectorAll('.text-slate-900');
+const darkTexts = document.querySelectorAll('.text-darkesh');
 
 // select light-backgrounds
 const lightBgs = document.querySelectorAll('.bg-light');
@@ -25,7 +25,7 @@ function darkMode() {
   if (a % 2 != 0) {
 
     for (let i = 0; i < lightTexts.length; i++) {
-      lightTexts[i].style.setProperty('color', '#0f172a', 'important');
+      lightTexts[i].style.setProperty('color', '#141f38', 'important');
       lightTexts[i].style.transition = 'all 0.3s linear';
 
     }
@@ -40,7 +40,7 @@ function darkMode() {
     }
 
     for (let i = 0; i < lightBgs.length; i++) {
-      lightBgs[i].style.setProperty('background-color', '#0f172a', 'important');
+      lightBgs[i].style.setProperty('background-color', '#141f38', 'important');
       lightBgs[i].style.transition = 'background-color 0.3s linear';
     }
 
@@ -54,12 +54,12 @@ function darkMode() {
     }
 
     for (let i = 0; i < darkTexts.length; i++) {
-      darkTexts[i].style.setProperty('color', '#0f172a', 'important');
+      darkTexts[i].style.setProperty('color', '#141f38', 'important');
       darkTexts[i].style.transition = 'all 0.3s linear';
     }
 
     for (let i = 0; i < darkBgs.length; i++) {
-      darkBgs[i].style.setProperty('background-color', '#0f172a', 'important');
+      darkBgs[i].style.setProperty('background-color', '#141f38', 'important');
       darkBgs[i].style.transition = 'background-color 0.3s linear';
     }
 
