@@ -1074,4 +1074,8 @@ video {
   .md\:text-center {
     text-align: center;
   }
+
+  .md\:outline {
+    outline-style: solid;
+  }
 }
