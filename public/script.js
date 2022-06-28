@@ -120,12 +120,37 @@ function scrollFunction() {
 // When the user clicks on the button, scroll to the top of the document
 mybutton.addEventListener("click", backToTop);
 
+
 function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  // document.body.scrollTop = 0;
+  // document.documentElement.scrollTop = 0;
+
+  window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+      });
 }
 
 
+// const scrollBtn = document.querySelector("btn-back-to-top");
+// const btnVisibility = () => {
+//   if (window.scrollY > 20) {
+//       scrollBtn.style.display = "block";
+//   } else {
+//       scrollBtn.style.display = "none";
+//   }
+// };
+
+// document.addEventListener("scroll", () => {
+//   btnVisibility();
+// });
+
+// scrollBtn.addEventListener("click", () => {
+//   window.scrollTo({
+//       top: 0,
+//       behavior: "smooth"
+//   });
+// });
 
 
 
