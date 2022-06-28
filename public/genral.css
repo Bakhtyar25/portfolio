@@ -110,5 +110,7 @@ z-index: 22;
     display: none;
   }
 
-
+  html { 
+    scroll-behavior:calc(1.5rem + 3vw);
+  }
 
