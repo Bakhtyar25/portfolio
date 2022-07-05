@@ -148,3 +148,5 @@ function backToTop() {
 //   })
 
 // })
+
+AOS.init();
