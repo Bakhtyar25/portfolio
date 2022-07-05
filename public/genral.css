@@ -102,6 +102,10 @@ z-index: 22;
     height: 100px;
 }
 
+.topp{
+    z-index: 20;
+}
+
 
 #btn-back-to-top {
     position: fixed;
