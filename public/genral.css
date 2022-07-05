@@ -111,6 +111,6 @@ z-index: 22;
   }
 
   html { 
-    scroll-behavior:calc(1.5rem + 3vw);
+    scroll-behavior:smooth;
   }
 
