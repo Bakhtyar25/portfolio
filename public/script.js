@@ -126,25 +126,6 @@ function backToTop() {
 }
 
 
-// const scrollBtn = document.querySelector("btn-back-to-top");
-// const btnVisibility = () => {
-//   if (window.scrollY > 20) {
-//       scrollBtn.style.display = "block";
-//   } else {
-//       scrollBtn.style.display = "none";
-//   }
-// };
-
-// document.addEventListener("scroll", () => {
-//   btnVisibility();
-// });
-
-// scrollBtn.addEventListener("click", () => {
-//   window.scrollTo({
-//       top: 0,
-//       behavior: "smooth"
-//   });
-// });
 
 
 
@@ -167,9 +148,3 @@ function backToTop() {
 //   })
 
 // })
-
-
-
-
-
-
